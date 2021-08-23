@@ -1,0 +1,164 @@
+body {
+	background: #EFEFBB;
+	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+	color: white;
+	margin: 0;
+	font-family: rubik;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+}
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	color: #222;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+}
+
+.card::after {
+	content: "";
+  display: block;
+  width: 50%;
+  height: 45%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: .7;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.card:hover {
+	animation: bounce 0.8s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: rgb(255, 255, 255);
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+}
+
+.card-image {
+	height: 180px;
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes bounce {
+	15% {
+			transform: translateY(-15px);
+	}
+	30% {
+			transform: translateY(0px);
+	}
+
+	45% {
+			transform: translateY(-10px);
+	}
+	60% {
+			transform: translateY(0);
+	}
+
+	75% {
+		transform: translateY(-5px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.steel {
+	background-color: #c2c2c2;
+}
+
+.fire {
+	background-color: #f55858;
+}
+
+.grass {
+	background-color: #40c549;
+}
+
+.electric {
+	background-color: #fff56a;
+}
+
+.water {
+	background-color: #4957c2;
+}
+
+.ice {
+	background-color: #9bedf3;
+}
+
+.ground {
+	background-color: #e9a056;
+}
+
+.rock {
+	background-color: #96733e;
+}
+
+.fairy {
+	background-color: #ff00a2;
+}
+
+.poison {
+	background-color: #99488c;
+}
+
+.bug {
+	background-color: #a8d09e;
+}
+
+.dragon {
+	background-color: #97b3e6;
+}
+
+.psychic {
+	background-color: #fc05cb;
+}
+
+.flying {
+	background-color: #def3f3;
+}
+
+.fighting {
+	background-color: #ac9974;
+}
+
+.ghost {
+    background-color: rgb(102, 22, 75);
+}
+
+.normal {
+	background-color: #e4e4e4;
+}
